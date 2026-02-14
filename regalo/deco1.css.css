@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background: url("hojitas.gif") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* TITULO */
+h1 {
+  font-family: 'Alex Brush', cursive;
+  color: #f88fa2;
+  font-size: 90px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+.sub {
+  color: #c97bcf;
+  margin-bottom: 25px;
+}
+
+/* TARJETAS */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* BOTONES */
+button {
+  width: 100%;
+  margin-top: 10px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e63956;
+}
+
+/* NOTAS */
+.nota {
+  background: #fff0f6;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.nota button {
+  background: #ff4d6d;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* HORARIO */
+.horario-item {
+  display: flex;
+  flex-direction: column; /* 👈 esto arregla celular */
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+/* ALERTA */
+#alerta {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #c9184a;
+}
+
+/* EXTRA para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .sub {
+    font-size: 14px;
+  }
+}

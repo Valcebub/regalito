@@ -1,0 +1,71 @@
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <title>esto es demasiado cursi para mi...</title>
+  
+  <link rel="stylesheet" href="deco1.css.css">
+</head>
+<body>
+
+
+
+  <h1>Los amo, mierda...<br> ღ </h1>
+  <p class="sub">Nuestro rincon secreto</p>
+
+
+
+  <!-- NOTITAS -->
+  <section class="card">
+    <h2>💌 Deja una notita</h2>
+    <input id="autor" placeholder="Tu nombre">
+    <textarea id="mensaje" placeholder="Escribe algo lindo..."></textarea>
+    <button onclick="guardarNota()">Guardar 💕</button>
+  </section>
+
+
+
+  <section class="card">
+  <h2>📅 Horario diario</h2>
+
+  <div class="horario-item">
+    <input type="time" class="hora-horario">
+    <input class="mensaje-horario" placeholder="Mensaje automático 💕">
+    <button onclick="guardarHorario(this)">💾</button>
+  </div>
+
+  <div class="horario-item">
+    <input type="time" class="hora-horario">
+    <input class="mensaje-horario" placeholder="Mensaje automático 💕">
+    <button onclick="guardarHorario(this)">💾</button>
+  </div>
+
+  <button onclick="agregarFilaHorario()">➕ Agregar hora</button>
+</section>
+
+
+  <section class="card">
+    <h2>📜 Notitas</h2>
+    <div id="notas"></div>
+  </section>
+
+  <!-- RECORDATORIOS -->
+  <section class="card">
+    <h2>⏰ Recordatorio</h2>
+    <input type="time" id="hora">
+    <input id="textoRecordatorio" placeholder="Ej: recuerden que los amo mucho... 💖">
+    <button onclick="agregarRecordatorio()">Agregar ⏰</button>
+  </section>
+
+  <div id="alerta"></div>
+
+  <script src="script.js.js"></script>
+</body>
+</html>
